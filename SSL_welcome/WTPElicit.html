@@ -1,0 +1,16 @@
+{{ block title }}
+    Value of additional information
+{{ endblock }}
+
+{{ block content }}
+<p>
+    On the next page, you will be shown ONE (1) additional marble drawn from your jar and you will be asked again which jar you think was chosen for you.
+</p>
+{{ formfield 'wtp' label='What is the maximum number of tokens you would be willing to give up to change your guess after seeing the additional piece of information?' }}
+
+<p>
+    The price for changing your answer will be randomly picked by the computer. You will learn that price only <strong>after</strong> you made your second guess about the jar. If your stated number of tokens is at least as high as the price picked by the computer at the end, your second guess will be used. If your stated number of tokens is lower than the price picked by the computer, your first guess will be used.
+</p>
+    {{ next_button }}
+
+{{ endblock }}

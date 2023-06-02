@@ -1,0 +1,27 @@
+{{ block title }}
+    Outcome
+{{ endblock }}
+
+{{ block content }}
+<p>
+    The computer randomly determined the price for using your second guess to be {{ player.costToChange }} tokens. You stated that you would be willing to give up a maximum of {{ player.wtp }} tokens to use your second guess.
+</p>
+<p>
+    {{ if secondGuessUsed }}
+    Therefore, your second guess has been used and the price of {{ player.costToChange}} tokens has been deducted from your final payment.
+    {{ else }}
+    Therefore, your first guess has been used and there has been no deduction from your final payment.
+    {{ endif }}
+</p>
+<p>
+    The {{ if player.jarFacing == 0 }}<font color="orange">ORANGE</font>{{ else }}<font color="purple">PURPLE</font>{{ endif }} jar was chosen for you.
+</p>
+
+<p>
+    Your {{ if secondGuessUsed }}SECOND{{ else }}FIRST{{ endif }} guess was used and this guess was {{ if right }}RIGHT{{ else }}WRONG{{ endif }}, so your total bonus is {{ payout }}.
+</p>
+
+    {{ next_button }}
+
+{{ endblock }}
+

@@ -1,0 +1,49 @@
+{{ block title }}
+    Attention check
+{{ endblock }}
+
+{{ block content }}
+    <p>
+        <b>Please answer the following questions about the instructions you just read</b>
+    </p>
+
+    {{ formfield 'AddInfoCheck1' label='How many marbles drawn from the jar will have informed your guess used to determine your bonus payment at the end of the study?' }}
+
+    <p> Suppose the computer determines the price for using your second guess for determining your bonus to be 13. Which of the following numbers would result in your second guess being used if you had reported that number as the maximum number of tokens you were willing to give up?
+    </p>
+
+    <p>
+        <td>
+            - 97 <input type="checkbox" name="AddInfoCheck2">
+       </td>
+    </p>
+    <p>
+        <td>
+            - 13 <input type="checkbox" name="AddInfoCheck3">
+       </td>
+    </p>
+    <p>
+        <td>
+            - 36 <input type="checkbox" name="AddInfoCheck4">
+       </td>
+    </p>
+    <p>
+        <td>
+            - 3 <input type="checkbox" name="AddInfoCheck5">
+       </td>
+    </p>
+    <p>
+        <td>
+            - 12 <input type="checkbox" name="AddInfoCheck6">
+       </td>
+    </p>
+    <p>
+        <td>
+            - 5 <input type="checkbox" name="AddInfoCheck7">
+       </td>
+    </p>
+
+    {{ next_button }}
+
+{{ endblock }}
+

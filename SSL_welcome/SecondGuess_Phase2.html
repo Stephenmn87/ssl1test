@@ -1,0 +1,25 @@
+{{ block title }}
+    Second guess
+{{ endblock }}
+
+{{ block content }}
+
+<p>
+    You have been paired with one of the participants from the described previous round of the study. That participant faced the SAME jar as has been chosen for you and DID pay to use their second guess made after seeing ONE (1) more marble drawn from their jar.
+</p>
+<p>
+    The previous participant’s second guess was that the jar is {{ if player.addDraw == '0' }}<font color="orange">ORANGE</font>{{ else }}<font color="purple">PURPLE</font>{{ endif }}.
+</p>
+
+<p>
+    Remember, in your initial four (4) draws, you saw {{ numOrangeDraws }} <font color="orange">ORANGE</font> marbles drawn and {{ numPurpleDraws }} <font color="purple">PURPLE</font> marbles drawn.
+</p>
+
+{{ formfield 'secondGuess' label='Which jar do you think was chosen for you?' }}
+
+{{ formfield 'confidence2' label='On a scale from 0 (not certain at all certain, 50/50 chance your guess is correct) to 10 (absolutely certain, 100 percent your guess is correct), how certain are you about the answer you just gave?' }}
+
+    {{ next_button }}
+
+{{ endblock }}
+

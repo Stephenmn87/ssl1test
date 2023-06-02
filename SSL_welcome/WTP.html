@@ -1,0 +1,30 @@
+{{ block title }}
+    Instructions
+{{ endblock }}
+
+{{ block content }}
+    <p>
+        The guess you just made is the default for determining your bonus payment. Shortly, you will receive more information about your jar. The additional information will be described on the next screen.
+    </p>
+ <p>
+        After seeing the additional information, you will be asked again to guess which jar has been chosen for you. However, using your second guess instead of your first guess to determine your bonus payment is not free.
+    </p>
+    <p>
+        <strong>Before</strong> we show you the additional information, we will ask you for the maximum amount you would be willing to pay to use your second guess to determine your bonus payment.
+    </p>
+    <p>
+        This type of question will look like:
+    </p>
+{{ formfield 'WTPExample' label='What is the maximum number of tokens you would be willing to give up now to change your guess after seeing the additional piece of information?' }}
+
+    <p>
+        <strong>You will receive the biggest payment if you report an amount exactly equal to how valuable you think the additional information will be for guessing which jar has been chosen for you.</strong>
+    </p>
+    <p>
+        At the end, the computer will randomly pick a price between 0 and {{C.BONUS}} tokens for using your second guess to determine your bonus. If you reported that you are willing to pay this price, your second guess will be used to determine your bonus payment and you will pay the price the computer picked. If the price is more than the amount you reported, your first guess stands and you will pay nothing.
+    </p>
+
+    {{ next_button }}
+
+{{ endblock }}
+

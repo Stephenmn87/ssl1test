@@ -1,0 +1,23 @@
+{{ block title }}
+    Survey
+{{ endblock }}
+
+{{ block content }}
+    <p>
+        <b>Please answer the following short questions</b>
+    </p>
+
+    {{ formfield 'gender' label='What gender do you most identify with?' }}
+
+    {{ formfield 'risks' label='How willing are you to take risks? [0=completely unwilling to take risks, 10=very willing to take risks]' }}
+
+    {{ formfield 'goodcauses' label='How willing are you to give to good causes without expecting anything in return? [0=completely unwilling, 10=very willing]' }}
+
+    {{ formfield 'math' label='How well does the following statement describe you: “I am good at math”? [0=does not describe me at all, 10=describes me perfectly]' }}
+
+    {{ formfield 'windfall' label='Imagine the following situation: Today you unexpectedly received 1,600 U.S. dollars. How much of this amount would you donate to a good cause?' }}
+
+    {{ next_button }}
+
+{{ endblock }}
+

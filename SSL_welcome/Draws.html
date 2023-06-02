@@ -1,0 +1,111 @@
+
+{{ block title }}
+    First {{ C.NUM_DRAWS }} draws
+{{ endblock }}
+
+{{ block content }}
+
+<style>
+    .otree-timer {
+        display: none;
+    }
+</style>
+{{ if player.firstDraws == '0000' }}
+<figure>
+<img src="https://i.imgur.com/dy7pHSv.gif" alt="Drawing marbles" style="width:55%">
+</figure>
+{{ else }}
+    {{ if player.firstDraws == '1000' }}
+    <figure>
+    <img src="https://i.imgur.com/3D2ph7I.gif" alt="Drawing marbles" style="width:55%">
+    </figure>
+    {{ else }}
+        {{ if player.firstDraws == '0100' }}
+        <figure>
+        <img src="https://i.imgur.com/5k0zPxt.gif" alt="Drawing marbles" style="width:55%">
+        </figure>
+        {{ else }}
+            {{ if player.firstDraws == '0010' }}
+            <figure>
+            <img src="https://i.imgur.com/iZQUrsF.gif" alt="Drawing marbles" style="width:55%">
+            </figure>
+            {{ else }}
+                {{ if player.firstDraws == '0001' }}
+                <figure>
+                <img src="https://i.imgur.com/qjJs3Vc.gif" alt="Drawing marbles" style="width:55%">
+                </figure>
+                {{ else }}
+                    {{ if player.firstDraws == '1100' }}
+                    <figure>
+                    <img src="https://i.imgur.com/Wf9cv8p.gif" alt="Drawing marbles" style="width:55%">
+                    </figure>
+                    {{ else }}
+                        {{ if player.firstDraws == '1010' }}
+                        <figure>
+                        <img src="https://i.imgur.com/rIcx1ZZ.gif" alt="Drawing marbles" style="width:55%">
+                        </figure>
+                        {{ else }}
+                            {{ if player.firstDraws == '1001' }}
+                            <figure>
+                            <img src="https://i.imgur.com/MUWfSxi.gif" alt="Drawing marbles" style="width:55%">
+                            </figure>
+                            {{ else }}
+                                {{ if player.firstDraws == '0110' }}
+                                <figure>
+                                <img src="https://i.imgur.com/gwTt90w.gif" alt="Drawing marbles" style="width:55%">
+                                </figure>
+                                {{ else }}
+                                    {{ if player.firstDraws == '0101' }}
+                                    <figure>
+                                    <img src="https://i.imgur.com/juTSYrl.gif" alt="Drawing marbles" style="width:55%">
+                                    </figure>
+                                    {{ else }}
+                                        {{ if player.firstDraws == '0011' }}
+                                        <figure>
+                                        <img src="https://i.imgur.com/9oi19Fl.gif" alt="Drawing marbles" style="width:55%">
+                                        </figure>
+                                        {{ else }}
+                                            {{ if player.firstDraws == '1110' }}
+                                            <figure>
+                                            <img src="https://i.imgur.com/N29ZiVQ.gif" alt="Drawing marbles" style="width:55%">
+                                            </figure>
+                                            {{ else }}
+                                                {{ if player.firstDraws == '1101' }}
+                                                <figure>
+                                                <img src="https://i.imgur.com/kFIFb2m.gif" alt="Drawing marbles" style="width:55%">
+                                                </figure>
+                                                {{ else }}
+                                                    {{ if player.firstDraws == '1011' }}
+                                                    <figure>
+                                                    <img src="https://i.imgur.com/3tM1Znm.gif" alt="Drawing marbles" style="width:55%">
+                                                    </figure>
+                                                    {{ else }}
+                                                        {{ if player.firstDraws == '0111' }}
+                                                        <figure>
+                                                        <img src="https://i.imgur.com/6qDjZoq.gif" alt="Drawing marbles" style="width:55%">
+                                                        </figure>
+                                                        {{ else }}
+                                                            {{ if player.firstDraws == '1111' }}
+                                                            <figure>
+                                                            <img src="https://i.imgur.com/qcmjsN1.gif" alt="Drawing marbles" style="width:55%">
+                                                            </figure>
+                                                            {{ endif }}
+                                                        {{ endif }}
+                                                    {{ endif }}
+                                                {{ endif }}
+                                            {{ endif }}
+                                        {{ endif }}
+                                    {{ endif }}
+                                {{ endif }}
+                            {{ endif }}
+                        {{ endif }}
+                    {{ endif }}
+                {{ endif }}
+            {{ endif }}
+        {{ endif }}
+    {{ endif }}
+{{ endif }}
+
+{{ endblock }}
+
+

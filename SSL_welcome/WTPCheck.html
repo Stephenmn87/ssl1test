@@ -1,0 +1,21 @@
+{{ block title }}
+    Attention check
+{{ endblock }}
+
+{{ block content }}
+    <p>
+        <b>Please answer the following questions about the instructions you just read</b>
+    </p>
+
+    {{ formfield 'WTPCheck1' label='If the computer picks a price greater than the amount you report you are willing to give up, which of your answers to the question about the jar chosen for you will determine your bonus payment? ' }}
+
+    {{ formfield 'WTPCheck2' label='If you expect the additional piece of information will increase your payment by 72 tokens, how many tokens should you report you are willing to give up?' }}
+
+    {{ formfield 'WTPCheck3' label='If you report that you would be willing to give up a maximum of 17 tokens and the computer determines the price to be 22 tokens, will the guess you make after seeing the additional information be used to determine your bonus?' }}
+
+    {{ formfield 'WTPCheck4' label='If you report that you would be willing to give up a maximum of 62 tokens and the computer determines the price to be 42 tokens, the guess you make after seeing the additional information will be used to determine your bonus. How many tokens will be deducted from your payment as a result?' }}
+
+    {{ next_button }}
+
+{{ endblock }}
+

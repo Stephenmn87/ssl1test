@@ -1,0 +1,18 @@
+{{ block title }}
+    First guess
+{{ endblock }}
+
+{{ block content }}
+
+<p>
+    You saw {{ numOrangeDraws }} <font color="orange">ORANGE</font> marbles drawn and {{ numPurpleDraws }} <font color="purple">PURPLE</font> marbles drawn.
+</p>
+
+{{ formfield 'firstGuess' label='Which jar do you think was chosen for you?' }}
+
+{{ formfield 'confidence1' label='On a scale from 0 (not certain at all certain, 50/50 chance your guess is correct) to 10 (absolutely certain, 100 percent your guess is correct), how certain are you about the answer you just gave?' }}
+
+    {{ next_button }}
+
+{{ endblock }}
+

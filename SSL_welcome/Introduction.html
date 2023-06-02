@@ -1,0 +1,25 @@
+{{ block title }}
+    Instructions
+{{ endblock }}
+
+{{ block content }}
+    <p>
+        Two jars each have 100 marbles that are either <font color="orange">orange</font> or <font color="purple">purple</font>. One jar (the “<font color="orange">ORANGE</font>” jar)
+        has {{C.MAJ}} orange marbles and {{C.MIN}} purple marbles. The second jar (the “<font color="purple">PURPLE</font>” bag) has {{C.MIN}} orange marbles and
+        {{C.MAJ}} purple marbles.
+    </p>
+
+    <p>
+        A fair coin flip has determined which one of the two jars has been chosen for you. Your task is to guess which jar was chosen.
+    </p>
+
+    <p>
+        To help you guess, you will be shown marbles drawn from the jar.  Each marble will be returned to the jar immediately after being shown to you.
+    </p>
+<figure>
+            <img src="https://i.imgur.com/SSVtSTX.png" alt="Two possible jars" style="width:50%">
+            </figure>
+    {{ next_button }}
+
+{{ endblock }}
+

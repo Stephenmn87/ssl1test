@@ -1,0 +1,21 @@
+{{ block title }}
+    Attention check
+{{ endblock }}
+
+{{ block content }}
+    <p>
+        <b>Please answer the following questions about the instructions you just read</b>
+    </p>
+
+    {{ formfield 'IntroCheck1' label='How many <font color="purple">purple</font> marbles are in the <font color="orange">ORANGE</font> jar?' }}
+
+    {{ formfield 'IntroCheck2' label='In total, how many marbles are in each jar?' }}
+
+    {{ formfield 'IntroCheck3' label='How likely is it that the <font color="purple">PURPLE</font> jar has been chosen for you? (Enter number between 0 and 100)' }}
+
+    {{ formfield 'IntroCheck4' label='How many marbles are in the jar chosen for you right before each marble is drawn from the jar and shown to you?' }}
+
+    {{ next_button }}
+
+{{ endblock }}
+

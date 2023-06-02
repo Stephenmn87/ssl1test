@@ -1,0 +1,15 @@
+{{ block title }}
+    Attention check
+{{ endblock }}
+
+{{ block content }}
+    <p>
+        <b>Please answer the following questions about the instructions you just read</b>
+    </p>
+
+    {{ formfield 'MajCheck3' label='Suppose you see more <font color="orange">orange</font> marbles than <font color="purple">purple</font> marbles drawn from the jar. Which jar was most likely chosen for you?' }}
+
+    {{ next_button }}
+
+{{ endblock }}
+

@@ -1,0 +1,30 @@
+
+{{ block title }}
+    Additional draw
+{{ endblock }}
+
+{{ block content }}
+
+<style>
+    .otree-timer {
+        display: none;
+    }
+</style>
+{{ if player.addDraw == '0' }}
+<figure>
+            <img src="https://i.imgur.com/tAlMgP7.gif" alt="Orange draw" style="width:25%">
+</figure>
+{{ else }}
+    {{ if player.addDraw == '1' }}
+        <figure>
+            <img src="https://i.imgur.com/tAlMgP7.gif" alt="Orange draw" style="width:25%">
+        </figure>
+    {{ endif }}
+{{ endif }}
+
+
+<p>testing gif, placeholder for eventual full animation of draws</p>
+
+
+{{ endblock }}
+

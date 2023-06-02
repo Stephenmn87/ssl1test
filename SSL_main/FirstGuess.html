@@ -1,0 +1,16 @@
+{{ block title }}
+    First guess
+{{ endblock }}
+
+{{ block content }}
+
+<p>
+    You saw {{ numOrangeDraws }} <font color="orange">ORANGE</font> marbles drawn and {{ numPurpleDraws }} <font color="purple">PURPLE</font> marbles drawn.
+</p>
+
+{{ formfield 'firstGuess' label='Which jar?' }}
+
+    {{ next_button }}
+
+{{ endblock }}
+

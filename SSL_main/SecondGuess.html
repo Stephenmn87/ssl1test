@@ -1,0 +1,22 @@
+{{ block title }}
+    Second guess
+{{ endblock }}
+
+{{ block content }}
+
+<p>
+    The additional (5th) marble drawn for you was {{ if player.addDraw == '0' }}<font color="orange">ORANGE</font>{{ else }}<font color="purple">PURPLE</font>{{ endif }}.
+</p>
+
+<p>
+    Across all five (5) draws, you saw {{ numOrangeDraws }} <font color="orange">ORANGE</font> marbles drawn and {{ numPurpleDraws }} <font color="purple">PURPLE</font> marbles drawn.
+</p>
+
+{{ formfield 'secondGuess' label='Which jar?' }}
+
+{{ formfield 'confidence' label='How likely is it that you think this second guess is correct, 0 to 100?' }}
+
+    {{ next_button }}
+
+{{ endblock }}
+

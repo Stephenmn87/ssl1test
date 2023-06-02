@@ -1,0 +1,35 @@
+
+{{ block title }}
+    First {{ C.NUM_DRAWS }} draws
+{{ endblock }}
+
+{{ block content }}
+
+<style>
+    .otree-timer {
+        display: none;
+    }
+</style>
+{{ if player.firstDraws == '0101' }}
+<figure>
+            <img src="https://i.imgur.com/tAlMgP7.gif" alt="Orange draw" style="width:25%">
+</figure>
+{{ else }}
+    {{ if player.firstDraws == '1010' }}
+        <figure>
+            <img src="https://i.imgur.com/tAlMgP7.gif" alt="Orange draw" style="width:25%">
+        </figure>
+    {{ else }}
+        <figure>
+            <img src="https://i.imgur.com/tAlMgP7.gif" alt="Orange draw" style="width:25%">
+        </figure>
+    {{ endif }}
+{{ endif }}
+
+
+<p>testing gif, placeholder for eventual full animation of draws</p>
+
+
+{{ endblock }}
+
+
